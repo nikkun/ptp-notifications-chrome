@@ -162,8 +162,9 @@ var main = function() {
   });
 };
 
-// Run it!
-main();
-
 // Repeat every 10 minutes
-setInterval(main, 1000 * 60 * 10);
+chrome.alarms.create({
+  when: Date.now() + 500,
+  periodInMinutes: 10,
+});
+chrome.alarms.onAlarm.addListener(main);

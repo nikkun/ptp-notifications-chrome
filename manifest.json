@@ -18,6 +18,7 @@
     "http://passthepopcorn.me/",
     "https://tls.passthepopcorn.me/",
     "notifications",
-    "storage"
+    "storage",
+    "alarms"
   ]
 }
