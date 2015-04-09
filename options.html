@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      html {
+        text-align: center;
+      }
+      h1 {
+        margin-bottom: 0;
+        color: #d0d0d0;
+        font-size: 80px;
+      }
+      h2 {
+        margin-top: -10px;
+        color: #d0d0d0;
+        font-size: 20px;
+      }
+      .options {
+        width: 210px;
+        margin: 0 auto;
+        color: #333;
+        font-size: 20px;
+        line-height: 1.5em;
+        text-align: left;
+      }
+      #save {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PTP Notifications</h1>
+    <h2>1.0.0</h2>
+    <div class="options">
+      <input id="inbox" type="checkbox" disabled />
+      <label for="inbox">Inbox</label>
+    </div>
+    <div class="options">
+      <input id="staff" type="checkbox" disabled />
+      <label for="staff">Staff inbox</label>
+    </div>
+    <div class="options">
+      <input id="torrents" type="checkbox" disabled />
+      <label for="torrents">Torrent notifications</label>
+    </div>
+    <button id="save" disabled>Saved</button>
+    <script src="options.js"></script>
+  </body>
+</html>
