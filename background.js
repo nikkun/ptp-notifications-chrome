@@ -62,10 +62,7 @@ Message.prototype.notify = function() {
   // Open message when notification is clicked
   var url = this.href;
   note.onclick = function() {
-    var link = document.createElement('a');
-    link.href = url;
-    link.target = '_blank';
-    link.click();
+    chrome.tabs.create({url: url});
   };
 };
 
