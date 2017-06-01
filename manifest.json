@@ -16,7 +16,7 @@
   "options_page": "options.html",
   "permissions": [
     "http://passthepopcorn.me/",
-    "https://tls.passthepopcorn.me/",
+    "https://passthepopcorn.me/",
     "notifications",
     "storage",
     "alarms",

@@ -9,7 +9,7 @@
  * Email: nikkun01@gmail.com
  *
  * Credit to heirun3 for inspiration:
- * https://tls.passthepopcorn.me/forums.php?action=viewthread&threadid=24280
+ * https://passthepopcorn.me/forums.php?action=viewthread&threadid=24280
  */
 
 // PTP message class
@@ -110,7 +110,7 @@ var parseInbox = function(response) {
 
 // Check staff inbox page
 var checkStaffInbox = function() {
-  request('https://tls.passthepopcorn.me/staffpm.php', function(response) {
+  request('https://passthepopcorn.me/staffpm.php', function(response) {
     var messageRows = response.getElementsByClassName('inbox-message--unread');
     for (var i = 0; i < messageRows.length; i++) {
       var cells =  messageRows[i].getElementsByTagName('td');
@@ -134,7 +134,7 @@ var main = function() {
     syncStaff: true,
     syncTorrents: true,
   }, function(prefs) {
-    request('https://tls.passthepopcorn.me/inbox.php', function(response) {
+    request('https://passthepopcorn.me/inbox.php', function(response) {
       if (prefs.syncInbox) {
         parseInbox(response);
       };
